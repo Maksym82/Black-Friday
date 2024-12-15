@@ -1,6 +1,12 @@
 .hero {
   background: linear-gradient(270deg, #001024 0%, #002555 50%, #001024 100%);
+  padding-top: 170px;
   padding-bottom: 170px;
+}
+
+.hero__box {
+    display: flex;
+    gap: 120px;
 }
 
 .hero__title {
