@@ -21,6 +21,13 @@ body {
   line-height: 1;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #fff;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -104,7 +111,4 @@ input {
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-}
-body {
-  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=main.css.map */
