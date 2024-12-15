@@ -23,25 +23,48 @@
   color: $colorWhite;
 }
 
-@media (min-width: 900.98px) {
+@media (min-width: 768px) {
   .menu__list {
     display: flex;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 860px) {
+  .menu__list {
+    gap: 26px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .menu__list {
     gap: 40px;
   }
 }
 
 .menu__link {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 140%;
   color: $colorWhite;
+  transition: color 0.3s linear;
 }
 
-//Berger
+.menu__link:hover {
+  color: $colorHoverNav;
+}
+
+@media (min-width: 860px) {
+  .menu__link {
+    font-size: 16px;
+  }
+}
+
+//Burger menu
 .icon-menu {
   display: none;
 }
 
-@media (max-width: 900.98px) {
+@media (max-width: 767.98px) {
   .header__container {
     min-height: 137px;
   }
@@ -118,5 +141,11 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    text-align: center;
+  }
+
+  .menu__link {
+    font-size: 20px;
+    font-weight: 600;
   }
 }

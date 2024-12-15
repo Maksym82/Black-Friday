@@ -173,25 +173,46 @@ input {
   color: #fff;
 }
 
-@media (min-width: 900.98px) {
+@media (min-width: 768px) {
   .menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 16px;
+  }
+}
+@media (min-width: 860px) {
+  .menu__list {
+    gap: 26px;
+  }
+}
+@media (min-width: 1170px) {
+  .menu__list {
     gap: 40px;
   }
 }
 .menu__link {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 140%;
   color: #fff;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
 }
 
+.menu__link:hover {
+  color: #ffe251;
+}
+
+@media (min-width: 860px) {
+  .menu__link {
+    font-size: 16px;
+  }
+}
 .icon-menu {
   display: none;
 }
 
-@media (max-width: 900.98px) {
+@media (max-width: 767.98px) {
   .header__container {
     min-height: 137px;
   }
@@ -275,5 +296,10 @@ input {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 16px;
+    text-align: center;
+  }
+  .menu__link {
+    font-size: 20px;
+    font-weight: 600;
   }
 }/*# sourceMappingURL=main.css.map */
