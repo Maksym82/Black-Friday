@@ -1,3 +1,17 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 *,
 *::before,
 *::after {
@@ -33,6 +47,7 @@ html {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -151,17 +166,35 @@ input {
 
 .logo__link {
   fill: #fff;
+  z-index: 1;
 }
 
+.menu__list {
+  color: #fff;
+}
+
+@media (min-width: 900.98px) {
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+  }
+}
 .menu__link {
-  color: black;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
 }
 
 .icon-menu {
   display: none;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 900.98px) {
+  .header__container {
+    min-height: 137px;
+  }
   .icon-menu {
     display: block;
     -webkit-box-flex: 0;
@@ -209,10 +242,11 @@ input {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background: -webkit-gradient(linear, right top, left top, from(#001024), color-stop(50%, #002555), to(#001024));
+    background: linear-gradient(270deg, #001024 0%, #002555 50%, #001024 100%);
     left: -100%;
     top: 0;
-    padding: 100px 15px 30px 15px;
+    padding: 137px 15px 30px 15px;
     overflow: auto;
     -webkit-transition: left 0.3s linear;
     transition: left 0.3s linear;
@@ -223,21 +257,23 @@ input {
     position: fixed;
     top: 0;
     left: -100%;
-    height: 70px;
-    background-color: #000;
+    height: 137px;
+    background: -webkit-gradient(linear, right top, left top, from(#001024), color-stop(50%, #002555), to(#001024));
+    background: linear-gradient(270deg, #001024 0%, #002555 50%, #001024 100%);
     z-index: 2;
   }
-}
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
+  .menu-open .menu__body,
+  .menu-open .menu__body::before {
+    left: 0;
+  }
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -16,17 +16,23 @@
 
 .logo__link {
   fill: $colorWhite;
+  z-index: 1;
 }
 
-@media (min-width: 768px) {
+.menu__list {
+  color: $colorWhite;
+}
+
+@media (min-width: 900.98px) {
   .menu__list {
     display: flex;
     gap: 40px;
-    color: #fff;
   }
 }
 
 .menu__link {
+  font-size: 16px;
+  line-height: 140%;
   color: $colorWhite;
 }
 
@@ -35,7 +41,11 @@
   display: none;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 900.98px) {
+  .header__container {
+    min-height: 137px;
+  }
+
   .icon-menu {
     display: block;
     flex: 0 0 30px;
@@ -81,10 +91,10 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background: linear-gradient(270deg, #001024 0%, #002555 50%, #001024 100%);
     left: -100%;
     top: 0;
-    padding: 100px 15px 30px 15px;
+    padding: 137px 15px 30px 15px;
     overflow: auto;
     transition: left 0.3s linear;
   }
@@ -94,8 +104,19 @@
     position: fixed;
     top: 0;
     left: -100%;
-    height: 70px;
-    background-color: #000;
+    height: 137px;
+    background: linear-gradient(270deg, #001024 0%, #002555 50%, #001024 100%);
     z-index: 2;
+  }
+
+  .menu-open .menu__body,
+  .menu-open .menu__body::before {
+    left: 0;
+  }
+
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }

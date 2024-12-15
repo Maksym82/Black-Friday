@@ -1,3 +1,7 @@
+//Utils
+@import './utils/variables';
+@import './utils/placeholders';
+
 //Base
 @import './base/base';
 @import './base/fonts';
@@ -9,7 +13,5 @@
 //Layout
 @import './layout/header';
 
-//Utils
-@import './utils/variables';
-@import './utils/placeholders';
+
 
