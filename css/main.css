@@ -142,7 +142,6 @@ input {
 }
 
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -302,4 +301,8 @@ input {
     font-size: 20px;
     font-weight: 600;
   }
+}
+.hero {
+  background: -webkit-gradient(linear, right top, left top, from(#001024), color-stop(50%, #002555), to(#001024));
+  background: linear-gradient(270deg, #001024 0%, #002555 50%, #001024 100%);
 }/*# sourceMappingURL=main.css.map */
