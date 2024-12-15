@@ -1,3 +1,57 @@
 .hero {
-    background: linear-gradient(270deg, #001024 0%, #002555 50%, #001024 100%);
+  background: linear-gradient(270deg, #001024 0%, #002555 50%, #001024 100%);
+  padding-bottom: 170px;
+}
+
+.hero__title {
+  width: 431px;
+  font-weight: 900;
+  font-size: 116px;
+  line-height: 90%;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.hero__title span {
+  font-size: 106px;
+}
+
+.hero__description {
+  width: 426px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  border-radius: 8px;
+  background-color: $colorRed;
+  padding: 10px 27px 14px;
+  margin-bottom: 38px;
+}
+
+.courses {
+  width: 578px;
+}
+
+.courses__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 27px;
+  row-gap: 15px;
+}
+
+.courses__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 9px;
+  width: 174px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 7px 0 7px 7px;
+  transition: background-color 0.3s linear;
+}
+
+.courses__link:hover,
+.courses__link:focus {
+  background-color: $colorBgHoverGray;
 }
