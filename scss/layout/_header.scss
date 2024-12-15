@@ -14,8 +14,20 @@
   min-height: 137px;
 }
 
+.logo__link {
+  fill: $colorWhite;
+}
+
+@media (min-width: 768px) {
+  .menu__list {
+    display: flex;
+    gap: 40px;
+    color: #fff;
+  }
+}
+
 .menu__link {
-  color: black;
+  color: $colorWhite;
 }
 
 //Berger
