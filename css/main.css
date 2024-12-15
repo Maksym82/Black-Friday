@@ -127,7 +127,7 @@ input {
   color: #fff;
 }
 
-.header__container {
+.header {
   background-color: linear-gradient(270deg, #001024 0%, #002555 50%, #001024 100%);
 }
 
