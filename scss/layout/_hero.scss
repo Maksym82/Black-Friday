@@ -70,6 +70,10 @@
   padding: 10px 14px;
   margin-bottom: 20px;
 
+  @media (min-width: 425px) {
+    width: 395px;
+  }
+
   @media (min-width: 768px) {
     width: 426px;
     font-weight: 600;
@@ -93,6 +97,7 @@
 
   @media (min-width: 768px) {
     column-gap: 27px;
+    justify-content: flex-start;
   }
 }
 

@@ -382,6 +382,11 @@ input {
   padding: 10px 14px;
   margin-bottom: 20px;
 }
+@media (min-width: 425px) {
+  .hero__description {
+    width: 395px;
+  }
+}
 @media (min-width: 768px) {
   .hero__description {
     width: 426px;
@@ -416,6 +421,9 @@ input {
     -webkit-column-gap: 27px;
        -moz-column-gap: 27px;
             column-gap: 27px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
