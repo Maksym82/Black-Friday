@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Black Friday</title>
     <!--Favicon-->
     <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!--Styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -48,54 +53,121 @@
           <div class="hero__box">
             <div class="hero__first-box">
               <h1 class="hero__title">Black <span>Friday</span></h1>
-              <p class="hero__description">Тиждень великих знижок на курси з топових IT професій</p>
+              <p class="hero__description">
+                Тиждень великих знижок на курси з топових IT професій
+              </p>
               <div class="courses">
                 <ul class="courses__list">
                   <li class="courses__item">
-                    <a class="courses__link" href="https://edu.cbsystematics.com/ru/specialities/frontend-developer" target="_blank">
-                      <img src="./images/hero/frontend.svg" alt="Frontend">
+                    <a
+                      class="courses__link"
+                      href="https://edu.cbsystematics.com/ru/specialities/frontend-developer"
+                      target="_blank"
+                    >
+                      <img src="./images/hero/frontend.svg" alt="Frontend" />
                       FrontEnd
                     </a>
                   </li>
                   <li class="courses__item">
-                    <a class="courses__link" href="https://edu.cbsystematics.com/ru/specialities/python-developer" target="_blank">
-                      <img src="./images/hero/python.svg" alt="Python">
-                      Python</a>
+                    <a
+                      class="courses__link"
+                      href="https://edu.cbsystematics.com/ru/specialities/python-developer"
+                      target="_blank"
+                    >
+                      <img src="./images/hero/python.svg" alt="Python" />
+                      Python</a
+                    >
                   </li>
                   <li class="courses__item">
-                    <a class="courses__link" href="https://edu.cbsystematics.com/ru/specialities/qa-manual" target="_blank">
-                      <img src="./images/hero/qa.svg" alt="QA">
-                      QA Manual</a>
+                    <a
+                      class="courses__link"
+                      href="https://edu.cbsystematics.com/ru/specialities/qa-manual"
+                      target="_blank"
+                    >
+                      <img src="./images/hero/qa.svg" alt="QA" />
+                      QA Manual</a
+                    >
                   </li>
                   <li class="courses__item">
-                    <a class="courses__link" href="https://edu.cbsystematics.com/ru/specialities/nodejs-developer" target="_blank">
-                      <img src="./images/hero/full stack.svg" alt="full stack">
-                      Full Stack</a>
+                    <a
+                      class="courses__link"
+                      href="https://edu.cbsystematics.com/ru/specialities/nodejs-developer"
+                      target="_blank"
+                    >
+                      <img
+                        src="./images/hero/full stack.svg"
+                        alt="full stack"
+                      />
+                      Full Stack</a
+                    >
                   </li>
                   <li class="courses__item">
-                    <a class="courses__link" href="https://edu.cbsystematics.com/ru/specialities/net-developer" target="_blank">
-                      <img src="./images/hero/c-sharp.svg" alt="c-sharp">
-                      C#/.NET</a>
+                    <a
+                      class="courses__link"
+                      href="https://edu.cbsystematics.com/ru/specialities/net-developer"
+                      target="_blank"
+                    >
+                      <img src="./images/hero/c-sharp.svg" alt="c-sharp" />
+                      C#/.NET</a
+                    >
                   </li>
                   <li class="courses__item visually-hidden">
-                    <a class="courses__link" href="https://edu.cbsystematics.com/ru/specialities/net-developer" target="_blank">
-                      <img src="./images/hero/c-sharp.svg" alt="c-sharp">
-                      C#/.NET</a>
+                    <a
+                      class="courses__link"
+                      href="https://edu.cbsystematics.com/ru/specialities/net-developer"
+                      target="_blank"
+                    >
+                      <img src="./images/hero/c-sharp.svg" alt="c-sharp" />
+                      C#/.NET</a
+                    >
                   </li>
                   <li class="courses__item">
-                    <a class="courses__link" href="https://edu.cbsystematics.com/ru/specialities/java-developer" target="_blank">
-                      <img src="./images/hero/java.svg" alt="java">
-                      Java</a>
+                    <a
+                      class="courses__link"
+                      href="https://edu.cbsystematics.com/ru/specialities/java-developer"
+                      target="_blank"
+                    >
+                      <img src="./images/hero/java.svg" alt="java" />
+                      Java</a
+                    >
                   </li>
                 </ul>
               </div>
             </div>
-            <img class="hero__image" src="./images/hero/hero-box.png" alt="black friday box">
+            <img
+              class="hero__image"
+              src="./images/hero/hero-box.png"
+              alt="black friday box"
+            />
+          </div>
+        </div>
+      </section>
+      <!--Advantages-->
+      <section class="advantages">
+        <div class="advantages__container">
+          <h2 class="section__title">Переваги роботи в IT</h2>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </section>
     </main>
 
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
