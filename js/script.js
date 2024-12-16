@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 document.addEventListener("click", documentClick);
 
@@ -11,3 +11,19 @@ function documentClick(e) {
     document.documentElement.classList.toggle("menu-open");
   }
 }
+
+
+// Swiper section Advantages
+const swiper = new Swiper('.slider-advantages', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  grabCursor: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+});
