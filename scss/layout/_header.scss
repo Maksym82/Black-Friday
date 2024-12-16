@@ -49,7 +49,8 @@
   transition: color 0.3s linear;
 }
 
-.menu__link:hover {
+.menu__link:hover,
+.menu__link:focus {
   color: $colorHoverNav;
 }
 
