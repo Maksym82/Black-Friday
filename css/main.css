@@ -145,13 +145,14 @@ input {
   .section__title {
     font-weight: 700;
     font-size: 44px;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 }
 @media (min-width: 1024px) {
   .section__title {
     font-weight: 900;
     font-size: 70px;
+    margin-bottom: 70px;
   }
 }
 
