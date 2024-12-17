@@ -582,12 +582,17 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 24px 12px 30px;
+  padding: 17px 12px 30px;
   height: 431px;
   -webkit-box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.15);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
+}
+@media (min-width: 530px) and (max-width: 645px) {
+  .specialty__swiper-slide {
+    height: 451px;
+  }
 }
 
 .card__top {
@@ -605,8 +610,37 @@ input {
 
 .card__name {
   font-weight: 700;
-  font-size: 34px;
+  font-size: 29px;
   line-height: 130%;
+}
+@media (min-width: 530px) and (max-width: 575px) {
+  .card__name {
+    font-size: 22px;
+  }
+}
+@media (min-width: 576px) and (max-width: 600px) {
+  .card__name {
+    font-size: 26px;
+  }
+}
+@media (min-width: 601px) and (max-width: 650px) {
+  .card__name {
+    font-size: 29px;
+  }
+}
+@media (min-width: 800px) {
+  .card__name {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1024px) {
+  .card__name {
+    font-size: 42px;
+  }
+}
+
+.card__top img {
+  height: 60px;
 }
 
 .card__start {
@@ -617,10 +651,16 @@ input {
 }
 
 .card__technology {
+  height: 78px;
   font-size: 20px;
   line-height: 130%;
   font-weight: 400;
   margin-bottom: 21px;
+}
+@media (min-width: 530px) and (max-width: 645px) {
+  .card__technology {
+    height: 100px;
+  }
 }
 
 .card__technology span {
@@ -632,6 +672,11 @@ input {
   line-height: 130%;
   font-weight: 400;
   margin-bottom: 30px;
+}
+@media (min-width: 626px) and (max-width: 671px) {
+  .card__duration {
+    font-size: 18px;
+  }
 }
 
 .card__duration span {
@@ -646,7 +691,7 @@ input {
   background-color: transparent;
   border: 2px solid #e50103;
   border-radius: 100px;
-  padding: 12px 26px;
+  padding: 12px 54px;
   -webkit-transition: background-color 0.4s linear;
   transition: background-color 0.4s linear;
 }
@@ -654,4 +699,17 @@ input {
 .card__button:hover,
 .card__button:focus {
   background-color: #e50103;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 14px;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #b7c4d8;
 }/*# sourceMappingURL=main.css.map */
