@@ -17,8 +17,10 @@ function documentClick(e) {
 const swiper = new Swiper('.slider-advantages', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
   grabCursor: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
 
   // If we need pagination
   pagination: {
@@ -26,4 +28,18 @@ const swiper = new Swiper('.slider-advantages', {
     clickable: true,
   },
 
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    // when window width is >= 1280px
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+
+ 
 });
