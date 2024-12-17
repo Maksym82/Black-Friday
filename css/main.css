@@ -349,19 +349,25 @@ input {
 .hero__title {
   position: relative;
   width: 290px;
+  height: 200px;
   font-weight: 800;
   font-size: 70px;
   line-height: 90%;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin: 0 auto;
+  margin-bottom: 54px;
 }
 @media (min-width: 768px) {
   .hero__title {
-    position: relative;
     width: 431px;
     font-weight: 900;
     font-size: 116px;
     margin-bottom: 24px;
+  }
+}
+@media (min-width: 1102px) {
+  .hero__title {
+    margin-left: 0;
   }
 }
 
@@ -376,13 +382,24 @@ input {
   }
 }
 
+.hero__title::after {
+  content: "";
+  background-image: url("../../images/hero/discount.png");
+  background-position: center;
+  width: 204px;
+  height: 141px;
+  position: absolute;
+  top: 46%;
+  left: 13%;
+}
+
 @media (min-width: 768px) {
   .hero__title::after {
     content: "";
     background-image: url("../../images/hero/discount.png");
     background-position: center;
     position: absolute;
-    top: 53%;
+    top: 56%;
     left: 91%;
     width: 204px;
     height: 141px;
@@ -397,6 +414,7 @@ input {
   border-radius: 8px;
   background-color: #e50103;
   padding: 10px 14px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 @media (min-width: 425px) {
@@ -412,6 +430,11 @@ input {
     line-height: 120%;
     padding: 10px 27px 14px;
     margin-bottom: 38px;
+  }
+}
+@media (min-width: 1102px) {
+  .hero__description {
+    margin-left: 0;
   }
 }
 
@@ -438,6 +461,10 @@ input {
     -webkit-column-gap: 27px;
        -moz-column-gap: 27px;
             column-gap: 27px;
+  }
+}
+@media (min-width: 1102px) {
+  .courses__list {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -479,6 +506,16 @@ input {
 @media (min-width: 1024px) {
   .hero__image {
     display: block;
+  }
+}
+
+.hidden {
+  display: none;
+}
+@media (min-width: 1102px) {
+  .hidden {
+    display: block;
+    visibility: hidden;
   }
 }
 
