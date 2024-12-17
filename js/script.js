@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 document.addEventListener("click", documentClick);
 
@@ -12,11 +12,10 @@ function documentClick(e) {
   }
 }
 
-
 // Swiper section Advantages
-const swiper = new Swiper('.slider-advantages', {
+const swiper = new Swiper(".slider-advantages", {
   // Optional parameters
-  direction: 'horizontal',
+  direction: "horizontal",
   loop: false,
   grabCursor: true,
   slidesPerView: 1,
@@ -24,7 +23,7 @@ const swiper = new Swiper('.slider-advantages', {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
 
@@ -45,6 +44,5 @@ const swiper = new Swiper('.slider-advantages', {
       spaceBetween: 20,
     },
   },
-
- 
 });
+
