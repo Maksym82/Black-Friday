@@ -29,6 +29,11 @@ const swiper = new Swiper('.slider-advantages', {
   },
 
   breakpoints: {
+    // when window width is >= 530px
+    530: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
     // when window width is >= 768px
     768: {
       slidesPerView: 2,
