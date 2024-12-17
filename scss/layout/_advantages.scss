@@ -1,6 +1,14 @@
 .advantages {
-  padding: 0 0 150px 0;
+  padding: 0 0 50px 0;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-bottom: 170px;
+  }
 }
 
 .advantages__swiper-slide {
@@ -25,7 +33,6 @@
 .advantages__image {
   margin: 0 auto;
   margin-bottom: 20px;
- 
 }
 
 .advantages__card-title {

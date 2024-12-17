@@ -330,8 +330,7 @@ input {
 }
 @media (min-width: 768px) {
   .hero {
-    padding-top: 170px;
-    padding-bottom: 170px;
+    padding-bottom: 100px;
   }
 }
 
@@ -520,8 +519,18 @@ input {
 }
 
 .advantages {
-  padding: 0 0 150px 0;
+  padding: 0 0 50px 0;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .advantages {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages {
+    padding-bottom: 170px;
+  }
 }
 
 .advantages__swiper-slide {
@@ -572,6 +581,16 @@ input {
 .specialty {
   padding: 0 0 50px 0;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .specialty {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .specialty {
+    padding-bottom: 170px;
+  }
 }
 
 .specialty__swiper-slide {
