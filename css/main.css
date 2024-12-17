@@ -135,8 +135,8 @@ input {
 }
 
 .section__title {
-  font-weight: 600;
-  font-size: 34px;
+  font-weight: 700;
+  font-size: 27px;
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
@@ -145,7 +145,7 @@ input {
 }
 @media (min-width: 768px) {
   .section__title {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 44px;
     margin-bottom: 34px;
   }
@@ -567,4 +567,91 @@ input {
   font-size: 16px;
   line-height: 1.4;
   text-align: center;
+}
+
+.specialty {
+  padding: 0 0 50px 0;
+  margin: 0 auto;
+}
+
+.specialty__swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 24px 12px 30px;
+  height: 441px;
+  -webkit-box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.card__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.card__name {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 130%;
+}
+
+.card__start {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  margin-bottom: 21px;
+}
+
+.card__technology {
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 400;
+  margin-bottom: 21px;
+}
+
+.card__technology span {
+  font-weight: 700;
+}
+
+.card__duration {
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.card__duration span {
+  font-weight: 700;
+}
+
+.card__button {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #e50103;
+  border-radius: 100px;
+  padding: 12px 26px;
+  -webkit-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+}
+
+.card__button:hover,
+.card__button:focus {
+  background-color: #e50103;
 }/*# sourceMappingURL=main.css.map */
