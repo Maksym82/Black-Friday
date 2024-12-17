@@ -540,6 +540,13 @@ input {
   -webkit-box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.15);
   margin: 0 auto;
+  -webkit-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+}
+
+.advantages__swiper-slide:hover,
+.advantages__swiper-slide:focus {
+  background-color: #f03131;
 }
 
 .advantages__image {
