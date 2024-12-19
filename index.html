@@ -41,7 +41,7 @@
                 <a class="menu__link" href="#specialty">IT спеціальності</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">Отримати консультацію</a>
+                <a class="menu__link" href="#consultation">Отримати консультацію</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="">Контакти</a>
@@ -362,32 +362,48 @@
         </div>
       </section>
       <!--Consultation-->
-      <section class="consultation">
+      <section class="consultation" id="consultation">
         <div class="consultation__container">
           <h2 class="section__title">
             Отримай
             <span class="consultation__title-span">безкоштовну</span>
             консультацію
           </h2>
-          <form class="form">
-            <label class="hidden" for="name">Імʼя</label>
-            <input
-              class="form__input"
-              type="text"
-              name="user-name"
-              id="name"
-              placeholder="Імʼя"
-              required
-            />
+          <div class="consultation__block">
+            <form class="form">
+              <label class="visually-hidden" for="name">Імʼя</label>
+              <input
+                class="form__input"
+                type="text"
+                name="user-name"
+                id="name"
+                autocomplete="on"
+                placeholder="Імʼя"
+                required
+              />
 
-            <label for="phone">Phone number</label>
-            <input type="tel" name="user-tel" id="phone"/>
-          </form>
+              <label class="visually-hidden" for="phone">Phone number</label>
+              <input
+                class="form__input"
+                type="tel"
+                name="user-tel"
+                id="phone"
+                required
+                placeholderNumberType="aggressive"
+              />
+              <button class="form__button" type="submit">
+                Отримати консультацію
+              </button>
+            </form>
+            <img
+              class="consultation__image"
+              src="./images/consultation/consultation-image.png"
+              alt="image"
+            />
+          </div>
         </div>
       </section>
     </main>
-
-    
 
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
     <script src="./js/phone.js" type="module"></script>
