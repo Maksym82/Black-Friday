@@ -11,6 +11,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css"
+    />
+
     <!--Styles-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -293,7 +299,7 @@
                 </div>
                 <p class="card__start">Старт: 5 грудня</p>
                 <p class="card__technology">
-                  <span>Технології:</span> Git, PostgreSQL, Django 
+                  <span>Технології:</span> Git, PostgreSQL, Django
                 </p>
                 <p class="card__duration">
                   <span>Тривалість:</span> 5.5 міс. / 110 год.
@@ -336,7 +342,8 @@
                 </div>
                 <p class="card__start">Старт: 10 грудня</p>
                 <p class="card__technology">
-                  <span>Технології:</span> Java, Git, MySQL, JDBC, Hibernate, Web-services, Spring.
+                  <span>Технології:</span> Java, Git, MySQL, JDBC, Hibernate,
+                  Web-services, Spring.
                 </p>
                 <p class="card__duration">
                   <span>Тривалість:</span> 3 міс. / 78 год.
@@ -357,15 +364,33 @@
       <!--Consultation-->
       <section class="consultation">
         <div class="consultation__container">
-          <h2 class="section__title">Отримай <span>безкоштовну</span> консультацію</h2>
+          <h2 class="section__title">
+            Отримай
+            <span class="consultation__title-span">безкоштовну</span>
+            консультацію
+          </h2>
           <form class="form">
             <label class="hidden" for="name">Імʼя</label>
-            <input class="form__input" type="text" name="user-name" id="name" placeholder="Імʼя" required>
+            <input
+              class="form__input"
+              type="text"
+              name="user-name"
+              id="name"
+              placeholder="Імʼя"
+              required
+            />
+
+            <label for="phone">Phone number</label>
+            <input type="tel" name="user-tel" id="phone"/>
           </form>
         </div>
       </section>
     </main>
 
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
+    <script src="./js/phone.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js" type="module"></script>
     <script src="./js/specialty.js" type="module"></script>

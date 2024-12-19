@@ -731,4 +731,27 @@ input {
   display: inline-block;
   border-radius: 50%;
   background-color: #b7c4d8;
+}
+
+.consultation {
+  padding: 0 0 50px 0;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .consultation {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .consultation {
+    padding-bottom: 170px;
+  }
+}
+
+.consultation .section__title {
+  text-align: left;
+}
+
+.consultation__title-span {
+  color: #ffd000;
 }/*# sourceMappingURL=main.css.map */
