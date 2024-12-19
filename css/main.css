@@ -759,9 +759,6 @@ input {
 @media (min-width: 1100px) {
   .consultation__block {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 .form {
@@ -845,4 +842,91 @@ input {
     top: -98px;
     right: 10px;
   }
+}
+
+.stripe__yellow-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 46px;
+  background-color: #ffd000;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+  -webkit-animation: marquee-infinite 15s linear infinite;
+          animation: marquee-infinite 15s linear infinite;
+  overflow: hidden;
+}
+
+@-webkit-keyframes marquee-infinite {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-infinite {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+.stripe__yellow-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 9px;
+  background-color: #030003;
+  padding: 10px 20px;
+}
+
+.stripe__yellow-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 9px;
+  background-color: #ffd000;
+  padding: 10px 20px;
+}
+
+.yellow__span {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+  color: #ffd000;
+}
+
+.white__span {
+  color: #fff;
+}
+
+.black__span {
+  color: #030003;
 }/*# sourceMappingURL=main.css.map */
