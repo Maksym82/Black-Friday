@@ -97,16 +97,47 @@
   }
 }
 
-.stripe__yellow-list {
+//Stripes
+.stripe__wrapper {
+  position: relative;
   width: 100%;
+  min-height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 247px;
+}
+
+.consultation__stripe {
+  position: absolute;
+  overflow: hidden;
+  height: 80px;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  box-shadow: inset 0 0 11px 0 rgba(0, 0, 0, 0.55);
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+.yellow__box {
+  background-color: #ffd000;
+  transform: rotate(7deg);
+  z-index: 10;
+  white-space: nowrap;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+}
+
+.stripe__yellow-list {
+  display: flex;
+  align-items: center;
   gap: 46px;
-  background-color: $colorSpan;
-  transform: rotate(4deg);
-  animation: marquee-infinite 15s linear infinite;
-  overflow: hidden;
+  will-change: transform;
+  animation: marquee-infinite 50s linear infinite;
 }
 
 @keyframes marquee-infinite {
@@ -115,17 +146,17 @@
   }
 
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-20%);
   }
 }
 
-.stripe__yellow-first {
+.stripe__yellow-item {
+  height: 47px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 9px;
-  background-color: #030003;
-  padding: 10px 20px;
+  align-items: center;
+  flex-shrink: 0;
+  text-transform: uppercase;
 }
 
 .stripe__yellow-second {
@@ -137,11 +168,7 @@
   padding: 10px 20px;
 }
 
-.yellow__span {
-  font-family: "Proxima Nova", sans-serif;
-  font-weight: 800;
-  font-size: 30px;
-  text-align: center;
+.yellow {
   color: $colorSpan;
 }
 
@@ -149,6 +176,6 @@
   color: $colorWhite;
 }
 
-.black__span {
+.black {
   color: #030003;
 }
