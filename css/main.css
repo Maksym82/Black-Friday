@@ -748,10 +748,11 @@ input {
   }
 }
 
-.consultation .section__title {
-  text-align: left;
+@media (min-width: 1100px) {
+  .consultation .section__title {
+    text-align: left;
+  }
 }
-
 .consultation__title-span {
   color: #ffd000;
 }
