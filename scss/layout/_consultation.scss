@@ -176,10 +176,18 @@
   color: $colorSpan;
 }
 
-.white__span {
-  color: $colorWhite;
-}
-
 .black {
   color: #030003;
 }
+// Фон выпадающего меню со списком стран
+.iti__dropdown-content {
+  background-color: #2d2525;
+}
+
+// Поиск
+.iti__search-input {
+  color: brown;
+}
+
+
+

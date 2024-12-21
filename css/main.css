@@ -961,10 +961,14 @@ input {
   color: #ffd000;
 }
 
-.white__span {
-  color: #fff;
-}
-
 .black {
   color: #030003;
+}
+
+.iti__dropdown-content {
+  background-color: #2d2525;
+}
+
+.iti__search-input {
+  color: brown;
 }/*# sourceMappingURL=main.css.map */
