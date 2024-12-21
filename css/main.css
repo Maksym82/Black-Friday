@@ -844,6 +844,14 @@ input {
   }
 }
 
+.iti__dropdown-content {
+  background-color: #2d2525;
+}
+
+.iti__search-input {
+  color: brown;
+}
+
 .stripe__wrapper {
   position: relative;
   width: 100%;
@@ -869,7 +877,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  height: 60px;
   font-weight: 800;
   font-size: 30px;
   text-align: center;
@@ -877,18 +885,51 @@ input {
   -webkit-box-shadow: inset 0 0 11px 0 rgba(0, 0, 0, 0.55);
           box-shadow: inset 0 0 11px 0 rgba(0, 0, 0, 0.55);
 }
+@media (min-width: 768px) {
+  .consultation__stripe {
+    height: 80px;
+  }
+}
 
 .yellow__box {
   background-color: #ffd000;
-  -webkit-transform: rotate(7deg);
-          transform: rotate(7deg);
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
   z-index: 10;
   white-space: nowrap;
   position: absolute;
-  top: 81px;
+  top: 61px;
+  left: 1px;
+  right: 1px;
+}
+@media (min-width: 1100px) {
+  .yellow__box {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+    top: 90px;
+  }
 }
 
-.stripe__yellow-list {
+.red__box {
+  background-color: #e50103;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  z-index: 9;
+  white-space: nowrap;
+  position: absolute;
+  top: 62px;
+  left: 1px;
+  right: 1px;
+}
+@media (min-width: 1100px) {
+  .red__box {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+    top: 114px;
+  }
+}
+
+.stripe__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -896,32 +937,8 @@ input {
       -ms-flex-align: center;
           align-items: center;
   gap: 46px;
-  will-change: transform;
-  -webkit-animation: marquee-infinite 50s linear infinite;
-          animation: marquee-infinite 50s linear infinite;
 }
 
-@-webkit-keyframes marquee-infinite {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateX(-20%);
-            transform: translateX(-20%);
-  }
-}
-
-@keyframes marquee-infinite {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateX(-20%);
-            transform: translateX(-20%);
-  }
-}
 .stripe__yellow-item {
   height: 47px;
   display: -webkit-box;
@@ -940,23 +957,65 @@ input {
 
 .stripe__yellow-item:nth-child(even) {
   background-color: black;
+  width: 255px;
 }
 
-.stripe__yellow-second {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 9px;
-  background-color: #ffd000;
-  padding: 10px 20px;
+.stripe__yellow-item:nth-child(odd) {
+  background-color: transparent;
+  width: 237px;
 }
 
+.yellow__box .stripe__list {
+  -webkit-animation: yellow-infinite 30s linear infinite;
+          animation: yellow-infinite 30s linear infinite;
+}
+
+.red__box .stripe__list {
+  -webkit-animation: red-infinite 30s linear infinite;
+          animation: red-infinite 30s linear infinite;
+}
+
+@-webkit-keyframes yellow-infinite {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+
+@keyframes yellow-infinite {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+@-webkit-keyframes red-infinite {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+@keyframes red-infinite {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
 .yellow {
   color: #ffd000;
 }
@@ -965,10 +1024,6 @@ input {
   color: #030003;
 }
 
-.iti__dropdown-content {
-  background-color: #2d2525;
-}
-
-.iti__search-input {
-  color: brown;
+.red {
+  color: #e50103;
 }/*# sourceMappingURL=main.css.map */

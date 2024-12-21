@@ -97,6 +97,16 @@
   }
 }
 
+// Фон выпадающего меню со списком стран
+.iti__dropdown-content {
+  background-color: #2d2525;
+}
+
+// Поиск
+.iti__search-input {
+  color: brown;
+}
+
 //Stripes
 .stripe__wrapper {
   position: relative;
@@ -113,41 +123,54 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 60px;
   font-weight: 800;
   font-size: 30px;
   text-align: center;
   color: $colorWhite;
   box-shadow: inset 0 0 11px 0 rgba(0, 0, 0, 0.55);
+
+  @media (min-width: 768px) {
+    height: 80px;
+  }
 }
 
 .yellow__box {
   background-color: $colorSpan;
-  transform: rotate(7deg);
+  transform: rotate(10deg);
   z-index: 10;
   white-space: nowrap;
   position: absolute;
-  top: 81px;
-  // left: -10px;
-  // right: -10px;
+  top: 61px;
+  left: 1px;
+  right: 1px;
+
+  @media (min-width: 1100px) {
+    transform: rotate(4deg);
+    top: 90px;
+  }
 }
 
-.stripe__yellow-list {
+.red__box {
+  background-color: $colorRed;
+  transform: rotate(-10deg);
+  z-index: 9;
+  white-space: nowrap;
+  position: absolute;
+  top: 62px;
+  left: 1px;
+  right: 1px;
+
+  @media (min-width: 1100px) {
+    transform: rotate(-7deg);
+    top: 114px;
+  }
+}
+
+.stripe__list {
   display: flex;
   align-items: center;
   gap: 46px;
-  will-change: transform;
-  animation: marquee-infinite 50s linear infinite;
-}
-
-@keyframes marquee-infinite {
-  0% {
-    transform: translateX(0%);
-  }
-
-  100% {
-    transform: translateX(-20%);
-  }
 }
 
 .stripe__yellow-item {
@@ -161,15 +184,40 @@
 
 .stripe__yellow-item:nth-child(even) {
   background-color: black;
+  width: 255px;
 }
 
-.stripe__yellow-second {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  background-color: $colorSpan;
-  padding: 10px 20px;
+.stripe__yellow-item:nth-child(odd) {
+  background-color: transparent;
+  width: 237px;
+}
+
+.yellow__box .stripe__list {
+  animation: yellow-infinite 30s linear infinite;
+}
+
+.red__box .stripe__list {
+  animation: red-infinite 30s linear infinite;
+}
+
+@keyframes yellow-infinite {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-20%);
+  }
+}
+
+@keyframes red-infinite {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-20%);
+  }
 }
 
 .yellow {
@@ -179,15 +227,7 @@
 .black {
   color: #030003;
 }
-// Фон выпадающего меню со списком стран
-.iti__dropdown-content {
-  background-color: #2d2525;
+
+.red {
+  color: $colorRed;
 }
-
-// Поиск
-.iti__search-input {
-  color: brown;
-}
-
-
-
