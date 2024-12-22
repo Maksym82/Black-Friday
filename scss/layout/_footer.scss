@@ -60,5 +60,19 @@
   fill: $colorHoverFooter;
 }
 
+.social__list {
+    display: flex;
+    gap: 24px;
+}
+
+.social__link {
+    fill: $colorWhite;
+    transition: fill 0.3s linear;
+}
+
+.social__link:hover,
+.social__link:focus {
+    fill: $colorHoverFooter;
+}
 
 
