@@ -1,22 +1,64 @@
 .footer {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
 }
 
 .footer__info {
-    width: 290px;
-    margin-bottom: 30px;
+  width: 290px;
+  margin-bottom: 30px;
 }
 
 .footer__info .logo__link {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .footer__info-text {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
+  line-height: 1.2;
 }
 
 .footer__info-rights {
-    font-size: 12px;
-    line-height: 1.2;
+  font-size: 12px;
+  line-height: 1.2;
 }
+
+.footer__info-rights a:hover,
+.footer__info-rights a:focus {
+  color: $colorHoverFooter;
+  transition: color 0.3s linear;
+}
+
+.footer__contacts {
+    margin-bottom: 30px;
+}
+
+.footer__contacts-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.address__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.address__link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  fill: $colorWhite;
+  transition: all 0.3s linear;
+}
+
+.address__link:hover,
+.address__link:focus {
+  color: $colorHoverFooter;
+  fill: $colorHoverFooter;
+}
+
+
+
