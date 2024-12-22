@@ -849,6 +849,10 @@ input {
   background-color: #2d2525;
 }
 
+.iti--inline-dropdown .iti__dropdown-content {
+  z-index: 11;
+}
+
 .iti__search-input {
   color: brown;
 }
