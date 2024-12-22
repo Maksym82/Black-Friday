@@ -159,7 +159,7 @@ input {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -1065,6 +1065,7 @@ input {
 }
 
 .footer__contacts {
+  width: 290px;
   margin-bottom: 30px;
 }
 
