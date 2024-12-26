@@ -1199,34 +1199,18 @@ input {
 }
 
 #scrollToTop {
-  position: sticky;
+  position: fixed;
   bottom: 40px;
-  left: 86%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 64px;
-  height: 64px;
-  border: 2px solid #fff;
+  left: 75%;
+  z-index: 5;
   border-radius: 50%;
-  -webkit-transition: border-color 0.3s linear;
-  transition: border-color 0.3s linear;
-}
-
-#scrollToTop:hover {
-  border-color: #ffe000;
+  opacity: 0.4;
 }
 
 .scroll-up {
-  width: 20px;
-  height: 30px;
   fill: #fff;
+  -webkit-transition: fill 0.3s linear;
+  transition: fill 0.3s linear;
 }
 
 .scroll-up:hover {

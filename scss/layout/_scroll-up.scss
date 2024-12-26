@@ -1,30 +1,17 @@
 #scrollToTop {
-  position: sticky;
+  position: fixed;
   bottom: 40px;
-  left: 86%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 64px;
-  height: 64px;
-  border: 2px solid $colorWhite;
+  left: 75%;
+  z-index: 5;
   border-radius: 50%;
-  transition: border-color 0.3s linear;
+  opacity: 0.4;
 }
 
-#scrollToTop:hover {
-    border-color: $colorHoverFooter;
-  }
-
 .scroll-up {
-    width: 20px;
-    height: 30px;
-    fill: $colorWhite;
+  fill: $colorWhite;
+  transition: fill 0.3s linear;
 }
 
 .scroll-up:hover {
-    fill: $colorHoverFooter;
+  fill: $colorHoverFooter;
 }
-
-
-
