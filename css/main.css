@@ -1206,6 +1206,11 @@ input {
   border-radius: 50%;
   opacity: 0.4;
 }
+@media (min-width: 768px) {
+  #scrollToTop {
+    left: 86%;
+  }
+}
 
 .scroll-up {
   fill: #fff;
