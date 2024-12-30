@@ -43,6 +43,7 @@
 }
 
 .menu__link {
+  position: relative;
   font-size: 14px;
   line-height: 140%;
   color: $colorWhite;
@@ -52,6 +53,25 @@
 .menu__link:hover,
 .menu__link:focus {
   color: $colorHoverNav;
+}
+
+.menu__link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: $colorHoverNav;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.6s ease;
+}
+
+.menu__link:hover::after,
+.menu__link:focus::after {
+  width: 100%;
+  left: 0;
 }
 
 @media (min-width: 860px) {

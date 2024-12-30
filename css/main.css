@@ -209,6 +209,7 @@ input {
   }
 }
 .menu__link {
+  position: relative;
   font-size: 14px;
   line-height: 140%;
   color: #fff;
@@ -219,6 +220,26 @@ input {
 .menu__link:hover,
 .menu__link:focus {
   color: #ffe251;
+}
+
+.menu__link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #ffe251;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.6s ease;
+}
+
+.menu__link:hover::after,
+.menu__link:focus::after {
+  width: 100%;
+  left: 0;
 }
 
 @media (min-width: 860px) {
@@ -1204,6 +1225,7 @@ input {
   left: 75%;
   z-index: 5;
   border-radius: 50%;
+  cursor: pointer;
   opacity: 0.4;
 }
 @media (min-width: 768px) {
