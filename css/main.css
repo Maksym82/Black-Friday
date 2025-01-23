@@ -404,7 +404,7 @@ input {
 
 .hero__title::after {
   content: "";
-  background-image: url("../../images/hero/discount.png");
+  background-image: url("../images/hero/discount.png");
   background-position: center;
   width: 204px;
   height: 141px;
@@ -416,7 +416,7 @@ input {
 @media (min-width: 768px) {
   .hero__title::after {
     content: "";
-    background-image: url("../../images/hero/discount.png");
+    background-image: url("../images/hero/discount.png");
     background-position: center;
     position: absolute;
     top: 56%;
